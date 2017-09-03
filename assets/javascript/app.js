@@ -43,7 +43,7 @@ $(document).ready(function() {
     		for (var i = 0; i < response.data.length; i++) {
     			var entry=$("<div>");
     			var img= $("<img>");
-    			entry.addClass("Canvas col-md-3");
+    			$(entry).addClass("Canvas col-md-3");
     			$(entry).append("<h2> rating: "+ response.data[i].rating+ "<h2>");
     			$(img).attr("src", response.data[i].images.fixed_width_still.url);
     			$(img).data("giphyData", response.data[i]);
